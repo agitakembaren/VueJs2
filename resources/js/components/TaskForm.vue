@@ -34,7 +34,7 @@
             addTask(){
                 axios.post('./apo/task',{title:'this.title});
                 Event.$emit('taskCreated',{title:'this.title});
-                this.title='';
+
             }
         }
     }
