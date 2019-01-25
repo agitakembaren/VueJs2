@@ -10,8 +10,18 @@ require('./bootstrap');
 window.Vue = require('vue');
 
 
-Vue.component('example-component', require
-('./components/ExampleComponent.vue'));
+Vue.component('example', require('./components/Example.vue'));
+
+Vue.component("task-form", require('./components/TaskForm.vue'));
+
+/**
+* Vue Router
+*
+* @link http://router.vuejs.org/en/installation.html
+*/
+import VueRouter from 'vue-router';
+Vue.use(VueRouter);
+
 const app = new Vue({
     el: '#app'
 });
